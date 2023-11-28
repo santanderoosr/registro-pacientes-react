@@ -1,0 +1,35 @@
+.registroMedico__container {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.registroMedico__h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.registroMedico__form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.registroMedico__form-group {
+  margin-bottom: 15px;
+}
+.registroMedico__label {
+  display: block;
+  font-weight: bold;
+}
+.registroMedico__input[type="text"],
+.registroMedico__input[type="email"],
+.registroMedico__input[type="number"],
+.registroMedico__input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #3498db;
+  border-radius: 5px;
+}
+.registroMedico__button {
+  grid-column: 1/3;
+  width: 100%;
+}

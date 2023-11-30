@@ -4,23 +4,25 @@ import Home from './pages/Home/Home';
 import Login from './pages/Login/Login';
 import RegistroPacientes from './pages/Registro/RegistroPacientes';
 import RegistroMedicos from './pages/Registro/RegistrroMedicos';
-
+import Agendamentos from './pages/Agendamentos/Agendamentos';
 
 function App() {
 
   return (
     <>
-      <Header/>
-      
-      <Home/>
+      <Header />
 
-      <Login/> 
+      <Home />
 
-      <RegistroPacientes/>
-      
-      <RegistroMedicos/>
+      <Login />
+
+      <RegistroPacientes />
+
+      <RegistroMedicos />
+
+      <Agendamentos />
     </>
-  )
+  );
 }
 
 export default App

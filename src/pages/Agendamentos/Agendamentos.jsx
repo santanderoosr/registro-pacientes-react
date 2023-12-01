@@ -4,9 +4,9 @@ export default function Agendamentos() {
     <div>
       <div className="agendamento__container">
         <h1 className="agendamento__h1">
-          encontre os melhores profissionais de saude da sua região agende
-          atendimento
+          encontre os melhores profissionais de saude da sua região 
         </h1>
+        <h2 className="agendamento__h2">Agende Atendimento</h2>
         <form className="agendamento__form">
           <div className="agendamento__form-group">
             <label className="agendamento__label" htmlFor="nomeOuEspecialidade">
@@ -20,12 +20,12 @@ export default function Agendamentos() {
               required
             />
           </div>
-          <div className="agendamento__form goup">
+          <div className="agendamento__form-goup">
             <label
               className="agendamento__label"
               htmlFor="cidadeMinhalocalizaçao"
             >
-              Cidade Minha Localizaçâo
+              Cidade  /  Minha Localizaçâo
             </label>
             <input
               className="agendamento__input"
@@ -72,7 +72,7 @@ export default function Agendamentos() {
             />
           </div>
 
-          <button className="login__button agendamentos__button" type="submit">
+          <button className="login__button agendamento__button" type="submit">
             Buscar Horarios
           </button>
         </form>

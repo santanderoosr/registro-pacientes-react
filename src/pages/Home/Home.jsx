@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
 import Rectangle from "../../assets/images/Rectanglesobre.png";
 import Medicos from "../../assets/images/paraMedicos.png";
 import Paciente from "../../assets/images/paraPacientes2.png";
 
+
 export default function Home() {
   return (
     <div>
-      <div className="sobre-section">
+      <div className="sobre-section" id="sobre">
         <h1>Sobre</h1>
         <p>
           Nosso sistema oferece um serviço de consulta com especialistas médicos
@@ -31,8 +33,8 @@ export default function Home() {
           <h4>PACIENTES</h4>
           <p>
             Procuram atendimento médico, diagnóstico, tratamento ou cuidados de
-            saúde. Eles podem apresentar uma variedade de condições médicas, desde
-            doenças simples até condições que exigem atenção especializada
+            saúde. Eles podem apresentar uma variedade de condições médicas,
+            desde doenças simples até condições que exigem atenção especializada
           </p>
         </div>
 
@@ -54,25 +56,27 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="cadastro">
+      <section id="cadastro" className="cadastro">
         <h2>CADASTROS</h2>
-        
+
         <div className="cadastro__container">
-          <div>
-            <h4>Para Medicos</h4>
-            <img src={Medicos} alt="paraMedicos" />
-          </div>
-          
-          <div>
-            <h4>Para Pacientes</h4>
-            <img src={Paciente} alt="paraPacientes" />
-          </div>
+          <Link to={"/registromedicos"}>
+            <div>
+              <h4>Para Medicos</h4>
+              <img src={Medicos} alt="paraMedicos" />
+            </div>
+          </Link>
+
+          <Link to={"/registropacientes"}>
+            <div>
+              <h4>Para Pacientes</h4>
+              <img src={Paciente} alt="paraPacientes" />
+            </div>
+          </Link>
         </div>
       </section>
 
-
-      <section className="valores">
-
+      <section className="valores" id="valores">
         <h1>NOSSOS VALORES</h1>
 
         <div>
@@ -87,17 +91,17 @@ export default function Home() {
           <div className="valores__card">
             <h3>Visão</h3>
             <p>
-              Ser o líder reconhecido na prestação de serviços médicos inovadores
-              e centrados no paciente, sendo a primeira opção para a comunidade em
-              matéria de cuidados de saúde
+              Ser o líder reconhecido na prestação de serviços médicos
+              inovadores e centrados no paciente, sendo a primeira opção para a
+              comunidade em matéria de cuidados de saúde
             </p>
           </div>
           <div className="valores__card">
             <h3>Valores</h3>
             <p>
               Inovação: Buscamos constantemente melhorar e adotar tecnologias e
-              abordagens avançadas na saúde. Acessibilidade: Garantimos que nossos
-              serviços sejam acessíveis a todos
+              abordagens avançadas na saúde. Acessibilidade: Garantimos que
+              nossos serviços sejam acessíveis a todos
             </p>
           </div>
         </div>

@@ -1,0 +1,17 @@
+.footer {
+  background-color: #0ea883;
+  padding: 2rem;
+}
+.footer__containerLogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__containerLogo-icones {
+display: flex;
+align-items: center;
+gap: 1rem;
+}
+.footer__containerLogo-icones img {
+    width: 55px;
+}

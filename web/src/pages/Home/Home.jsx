@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
+
 import Rectangle from "../../assets/images/Rectanglesobre.png";
 import Medicos from "../../assets/images/paraMedicos.png";
 import Paciente from "../../assets/images/paraPacientes2.png";
 
 
 export default function Home() {
+ 
+
   return (
     <div>
       <div className="sobre-section" id="sobre">

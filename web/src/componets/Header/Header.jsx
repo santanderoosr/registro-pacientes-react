@@ -7,6 +7,8 @@ export default function Header() {
   const location = useLocation();
 
   const isHome = location.pathname === "/";
+  const isPageCadastro = location.pathname === "/registropacientes";
+
   return (
     <div className="container__header">
       <header className="header">
@@ -27,9 +29,14 @@ export default function Header() {
               <a href="#valores">Valores</a>
             </li>
 
-            <li>
-              <a href="#cadastro">Cadastro</a>
-            </li>
+            {!isPageCadastro ? (
+              <li>
+                <a href="#cadastro">Cadastro</a>
+              </li>
+            ) : (
+              ""
+            )}
+
             <li>
               <Link to={"/agendamento"}>Agendar atendimento</Link>
             </li>

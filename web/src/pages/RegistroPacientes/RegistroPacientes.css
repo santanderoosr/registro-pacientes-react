@@ -33,3 +33,11 @@
   grid-column: 1/3;
   width: 100%;
 }
+
+.container__buttons-paciente {
+  grid-column: 1 / 3;
+}
+
+.registro__button.btn-excluir {
+  background-color: rgb(192, 9, 9);
+}

@@ -264,16 +264,16 @@ export default function RegistroPacientes() {
           )}
         </form>
 
-        {
-          !id ? '' : ( <button
-          className="login__button registro__button btn-excluir"
-          onClick={() => userDelete(id)}
-        >
-          Excluir Conta
-        </button>)
-        }
-
-       
+        {!id ? (
+          ""
+        ) : (
+          <button
+            className="login__button registro__button btn-excluir"
+            onClick={() => userDelete(id)}
+          >
+            Excluir Conta
+          </button>
+        )}
       </div>
     </div>
   );
